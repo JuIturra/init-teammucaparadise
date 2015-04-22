@@ -1,0 +1,25 @@
+<% @users.each do |u| %>
+<section class="user-end-space-section">
+	<div class="row user-space-section">
+		<div class="small-12 large-4 columns">
+			<h5><%= "#{u.name} #{u.lastname}" %></h5>
+			<%= image_tag(u.avatar, :class => "user-img") %>
+		</div>
+		<div class="small-12 large-8 columns user-space-section">
+			<div>
+				<h3><b>Nickname</b> <%= u.nickname %></h3>
+			</div>
+
+			<%= u.description %>
+			
+			<div>
+				<label>Valoracion: 
+					<div class="progress large-12 alert round">
+  						<span class="meter" style="width: <%= "#{20 * u.votes}" %>%"></span>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+</section>
+<% end %>
