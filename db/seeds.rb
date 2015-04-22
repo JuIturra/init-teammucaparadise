@@ -13,7 +13,8 @@ users = [
 	["Julians", "Iturra", 5, "prueba", "http://placehold.it/250x250", "Julito"],
 	["Ernesto", "Perez", 5, "prueba", "https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11150152_1130153200344098_7436841600182211476_n.jpg?oh=56654cda1c4b2747a74279debae2cc22&oe=55978478&__gda__=1440121113_0cd611eaf30adfa56914667ba580444c", "Piercing"],
 	["Rene", "Sanchez", 5, "prueba", "https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10978697_10205851407341388_8899108530534806102_n.jpg?oh=53b2c32744a5b3be8b73e944cb9d3264&oe=559F0A14&__gda__=1440726897_c9d933f57a576aa113c27ad3eb36ea06", "El rene"],
-	["Bairon", "Gonzalez", 1, "prueba", "http://placehold.it/250x250", "Desvirginathor"]
+	["Bairon", "Gonzalez", 1, "prueba", "http://placehold.it/250x250", "Desvirginathor"],
+	["Yojans", "Cid", 5, "prueba", "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10645171_10204566014171518_6450783513430089331_n.jpg?oh=8baed0abb72595eaab2dc34cb15e985f&oe=55A3761B&__gda__=1439976574_8a3c902a2e09df7b11dcde45e27004c9", "El yojan"]
 ]
 
 users.each do |name, lastname, votes, description, avatar, nickname|
