@@ -1,0 +1,23 @@
+<h1>Ingresar video</h1>
+<%= form_for(@video) do |f| %>
+	
+	<div class="row">
+		<div class="large-6 columns">
+			<div class="small-9 columns">
+				<%= f.text_field :title, placeholder: "Titulo del video", class: "text" %>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-6 columns">
+			<div class="small-9 columns">
+				<%= f.text_area :path, placeholder: "Link del video", class: "text" %>
+			</div>
+		</div>
+	</div><br>
+
+	<div class="field">
+		<%= f.submit "guardar", class: "button" %>
+	</div>
+
+<%end%>

@@ -23,3 +23,13 @@ users.each do |name, lastname, votes, description, avatar, nickname|
 				nickname: nickname)
 end
 
+videos = [
+	["D3sideratum the best chilean pro player","https://www.youtube.com/watch?v=-EgwfS4SD3c"],
+	["la mejor jugada q e visto en mi vida 2.0","https://www.youtube.com/watch?v=AyokO4riDIE"],
+	["d3sidemalo 2","https://www.youtube.com/watch?v=-Q9nKqFpQj0"],
+	["TeamProPloyer","https://www.youtube.com/watch?v=HrPINJQar1Q"]
+]
+
+videos.each do |title, path|
+	Video.create(title: title, path: path)
+end

@@ -1,0 +1,16 @@
+<style type="text/css">
+.rad{
+	border-top: 1px solid;
+}
+</style>
+
+<h1>Malikeox Videos</h1>
+<% @videos.each do |loco| %>
+
+<div class="row rad">
+
+	<h3><%= loco.title %></h3>
+	<button class="button secondary round"><%= link_to "Video", loco.path %></button>
+</div>
+
+<%end%>
