@@ -7,10 +7,12 @@
 <h1>Malikeox Videos</h1>
 <% @videos.each do |loco| %>
 
-<div class="row rad">
-
-	<h3><%= loco.title %></h3>
-	<button class="button secondary round"><%= link_to "Video", loco.path %></button>
+<div class="row">
+	<div class="small-12 medium-centered column">
+		<h3><%= loco.title %></h3>
+		<iframe width="640" height="360" src="<%= "http://www.youtube.com/embed/"+loco.path %>" frameborder="0"></iframe>
+	</div>
 </div>
+<br>
 
 <%end%>
